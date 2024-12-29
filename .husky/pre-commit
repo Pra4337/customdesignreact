@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Run tests before commit
+npm run test
+
+
+
+#Run Build before commit
+npm run build

@@ -1,13 +1,14 @@
 import React from 'react';
 import { PageProps } from './types';
+import { Container } from './styled';
 
 const Page: React.FC<PageProps> = ({title, children}) => {
   return (
-    <div>
-      <h1>Page</h1>
-        <h2>{title}</h2>
+
+    <Container data-testid="page-container">
+        <h1>{title}</h1>
         {children}
-    </div>
+    </Container>
   );
 }
 export default Page ;
